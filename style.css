@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+body{
+  background: #0D1117;
+  padding: 0 20px;
+}
+
+
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .search-input{
+  background: #010409;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 25px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  background-color: #010409;
+  color: #fff;
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding-left: 10px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 1px solid #C9D1D9;
+  
+}
+
+
+.autocom-box li:hover{
+  background: #1f6feb;
+}
+
+.repo-items {
+  margin-top: 150px;
+
+}
+
+.repo-items__el {
+  background-color: #161b22;
+  position: relative;
+  padding: 20px;
+  border-bottom: 1px solid #C9D1D9;
+}
+
+.repo-items__el p {
+  color: #C9D1D9;
+  padding-bottom: 5px;
+  font-size: 20px;
+
+  
+}
+
+.repo-items__el img {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 33px;
+  bottom: 0;
+  right: 20px;
+}
